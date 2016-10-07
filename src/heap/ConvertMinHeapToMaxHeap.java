@@ -3,6 +3,7 @@ package heap;
 /**
  * Created by Deepankit on 10/5/2016.
  */
+@SuppressWarnings("Duplicates")
 public class ConvertMinHeapToMaxHeap {
     public static void main(String[] args) {
         ConvertMinHeapToMaxHeap convertMinHeapToMaxHeap = new ConvertMinHeapToMaxHeap();

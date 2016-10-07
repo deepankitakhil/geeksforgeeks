@@ -3,15 +3,15 @@ package heap;
 /**
  * Created by Deepankit on 10/5/2016.
  */
-public class ChangeKeyForAGivenIndex {
+public class ChangeKeyForGivenIndex {
     public static void main(String[] args) throws Exception {
-        ChangeKeyForAGivenIndex changeKeyForAGivenIndex = new ChangeKeyForAGivenIndex();
+        ChangeKeyForGivenIndex changeKeyForGivenIndex = new ChangeKeyForGivenIndex();
         int index = 1;
-        int newKey = 10;
-        int[] input = new int[]{3, 1, 2};
-        changeKeyForAGivenIndex.validateInput(input, index);
-        changeKeyForAGivenIndex.decreaseKey(input, index, newKey);
-        changeKeyForAGivenIndex.display(input);
+        int newKey = 1000;
+        int[] input = new int[]{3, 1, 2,56,7,-1,-56,90};
+        changeKeyForGivenIndex.validateInput(input, index);
+        changeKeyForGivenIndex.decreaseKey(input, index, newKey);
+        changeKeyForGivenIndex.display(input);
     }
 
     private void display(int[] input) {
@@ -26,7 +26,7 @@ public class ChangeKeyForAGivenIndex {
 
     private void maxHeapify(int[] input) {
         for (int index = input.length / 2 - 1; index >= 0; index--)
-            heapify(input, index, input.length - 1);
+            heapify(input, index, input.length);
     }
 
     private void heapify(int[] input, int rootIndex, int endIndex) {
