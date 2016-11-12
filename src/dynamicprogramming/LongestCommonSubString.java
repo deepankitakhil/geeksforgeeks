@@ -6,7 +6,7 @@ package dynamicprogramming;
 public class LongestCommonSubString {
   public static void main(String[] args) {
     LongestCommonSubString longestCommonSubString = new LongestCommonSubString();
-    String commonSubString = longestCommonSubString.findLongestCommonSubString("tutorialhorizon", "dynamictutorialProgramming");
+    String commonSubString = longestCommonSubString.findLongestCommonSubString("BABC", "ABCBA");
     System.out.println(commonSubString);
   }
 
