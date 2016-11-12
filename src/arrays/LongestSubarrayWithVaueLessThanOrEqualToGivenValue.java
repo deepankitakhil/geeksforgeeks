@@ -8,9 +8,10 @@ import static java.lang.Math.min;
 public class LongestSubarrayWithVaueLessThanOrEqualToGivenValue {
   public static void main(String[] args) {
     LongestSubarrayWithVaueLessThanOrEqualToGivenValue longestSubarrayWithVaueLessThanOrEqualToGivenValue = new LongestSubarrayWithVaueLessThanOrEqualToGivenValue();
-    int[] input = new int[]{};
-    int threshold = 10;
-    longestSubarrayWithVaueLessThanOrEqualToGivenValue.findLongestSubarray(input, threshold);
+    int[] input = new int[]{6, 5, 10, 2, 3, 4, 1};
+    int threshold = 17;
+    int longestSubarray = longestSubarrayWithVaueLessThanOrEqualToGivenValue.findLongestSubarray(input, threshold);
+    System.out.println(longestSubarray);
   }
 
   private int findLongestSubarray(int[] input, int threshold) {
@@ -25,7 +26,7 @@ public class LongestSubarrayWithVaueLessThanOrEqualToGivenValue {
       return input.length;
     }
 
-    int[] minimumPrefixSum = new int[prefixSum.length];
+    int[] minimumPrefixSum = prefixSum;
     for (int index = minimumPrefixSum.length - 2; index >= 0; index--)
       minimumPrefixSum[index] = min(minimumPrefixSum[index], minimumPrefixSum[index + 1]);
 
