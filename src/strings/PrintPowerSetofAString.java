@@ -10,7 +10,7 @@ import java.util.List;
 public class PrintPowerSetofAString {
   public static void main(String[] args) {
     PrintPowerSetofAString printPowerSetofAString = new PrintPowerSetofAString();
-    String[] allSubString = printPowerSetofAString.buildSubsequences("abc");
+    String[] allSubString = printPowerSetofAString.buildSubsequences("gfg");
     printPowerSetofAString.display(allSubString);
   }
 
