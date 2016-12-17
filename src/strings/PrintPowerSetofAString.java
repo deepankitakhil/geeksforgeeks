@@ -34,7 +34,7 @@ public class PrintPowerSetofAString {
     return temp;
   }
 
-  public static String[] subStrings(String input) {
+  public static List<String> subStrings(String input) {
     ArrayList<String> strings = new ArrayList<>();
     strings.add("");
     for (int firstIndex = 0; firstIndex < input.length(); firstIndex++) {
@@ -42,6 +42,6 @@ public class PrintPowerSetofAString {
         strings.add(input.substring(firstIndex, secondIndex));
     }
 
-    return strings.toArray(new String[0]);
+    return strings;
   }
 }
